@@ -64,7 +64,7 @@ download_imagebuilder() {
     echo -e "${STEPS} Start downloading OpenWrt files..."
 
     # Determine the target system (Imagebuilder files naming has changed since 23.05.0)
-    if [[ "${op_branch:0:2}" -ge "23" && "${op_branch:3:2}" -ge "05" ]]; then
+    if [[ "${op_branch:0:2}" -ge "24" && "${op_branch:3:2}" -ge "10" ]]; then
         target_system="armsr/armv8"
         target_name="armsr-armv8"
         target_profile=""
